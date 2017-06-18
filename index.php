@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Nigeria Meteorological Agency</title>
@@ -31,11 +31,11 @@
         $cityWeather = new CityWeather($weather);
         $iconId =  $cityWeather->getIconId();
         $measureDate = $cityWeather->getMeasureDate();
-        $sunrise = $cityWeather->getSunriseHourFR();
-        $sunset = $cityWeather->getSunsetHourFR();
+        $sunrise = $cityWeather->getSunriseHour();
+        $sunset = $cityWeather->getSunsetHour();
         $humidity = $cityWeather->getHumidity();
         $pressure = $cityWeather->getPressure();
-        $wind = $cityWeather->getWindSpeedFR();
+        $wind = $cityWeather->getWindSpeed();
         $temp = $cityWeather->getTempC();
         $iconId = $cityWeather->getIconId();
         $lat = $cityWeather->getLat();
@@ -67,7 +67,7 @@
                 <input id="submit" class= "cityForm" type="submit" value="Get Weather Details"/>
             </form>
         </div>
-        <h3 id="title">Weather forecast of <?= $cityWeather->getDateFR()?> for <?= $city ?></h3>
+        <h3 id="title">Weather forecast of <?= $cityWeather->getDate()?> for <?= $city ?></h3>
         <span id="cityWeather">
             <span id="map">
                 <img src="https://maps.googleapis.com/maps/api/staticmap?center=<?=$lat?>,<?=$lon?>&zoom=12&size=250x250&key=AIzaSyBMPVNGjluoxeo6mZaDfTjAUTOb0yzQbuw">

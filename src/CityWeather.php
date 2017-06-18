@@ -77,7 +77,7 @@ class CityWeather{
 	 * To get measure date "day month" format
 	 * @return string : date
 	 */
-	public function getDateFR(){
+	public function getDate(){
 		$measure = getDate($this->measureDate);
 		return ($measure['mday']." ".$this->getMonth($measure['mon']));
 	}
@@ -86,7 +86,7 @@ class CityWeather{
 	 * To get sunrise hour in 24h format
 	 * @return string : sunrise hour
 	 */
-	public function getSunriseHourFR(){
+	public function getSunriseHour(){
 		$sunrise = $this->sunrise;
 		return $this->formatTime($sunrise);
 	}
@@ -95,7 +95,7 @@ class CityWeather{
 	 * To get sunset hour in 24h format
 	 * @return string : sunset hour
 	 */
-	public function getSunsetHourFR(){
+	public function getSunsetHour(){
 		$sunset = $this->sunset;
 		return $this->formatTime($sunset);
 	}
@@ -120,7 +120,7 @@ class CityWeather{
 	 * To get wind speed in km/h
 	 * @return string : wind speed
 	 */
-	public function getWindSpeedFR(){
+	public function getWindSpeed(){
 		return floor($this->windSpeed*3600/1000).' km/h';
 	}
 
