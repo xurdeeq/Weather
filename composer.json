@@ -1,5 +1,5 @@
 {
-    "name": "sadeeq/Weather",
+    "name": "sadeeq/weather",
     "authors": [
         {
             "name": "Sadeeq Akintola",
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Sadeeq\\Weather\\": "src/"
+            "Sadeeq\\weather\\": "src/"
         },
         "classmap": ["src/"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Sadeeq\\Weather\\Test\\": "tests/"
+            "Sadeeq\\weather\\Test\\": "tests/"
         },
         "classmap": ["tests/"]
     },
